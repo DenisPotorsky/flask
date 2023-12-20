@@ -12,7 +12,7 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="4e5a5cc8-00af-431c-8536-2d6ca69761ff">
+    <connection id="d1a49e55-21b5-4f62-aa93-3e4fac437a91">
       <console name="Connection" type="STANDARD" schema="" session="Main" />
     </connection>
   </component>
@@ -23,11 +23,11 @@
     <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
-    <connection id="4e5a5cc8-00af-431c-8536-2d6ca69761ff" />
+    <connection id="d1a49e55-21b5-4f62-aa93-3e4fac437a91" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="4e5a5cc8-00af-431c-8536-2d6ca69761ff" dataset="main.user" active-filter-id="ff18263a-53b3-4d5a-bd3c-f1862b22c103">
-      <filter id="ff18263a-53b3-4d5a-bd3c-f1862b22c103" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+    <filter-actions connection-id="d1a49e55-21b5-4f62-aa93-3e4fac437a91" dataset="main.user" active-filter-id="EMPTY_FILTER">
+      <filter id="0e8162a4-833a-4555-aa51-44d478210437" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
@@ -35,13 +35,21 @@
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
+  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="4e5a5cc8-00af-431c-8536-2d6ca69761ff" active="true" signed="true">
+      <connection id="d1a49e55-21b5-4f62-aa93-3e4fac437a91" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />
