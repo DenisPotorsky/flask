@@ -1,18 +1,17 @@
-
 from flask import Flask, render_template, request, redirect
 from flask_wtf.csrf import CSRFProtect
 from reg_form import LoginForm
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
-
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
 app.config['SECRET_KEY'] = 'secretkey'
 csrf = CSRFProtect(app)
 db = SQLAlchemy(app)
-# db.init_app(app)
 
+
+# db.init_app(app)
 
 
 class User(db.Model):
@@ -30,6 +29,7 @@ class User(db.Model):
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
