@@ -29,11 +29,11 @@ async def get_task(id_task: int):
 
 @app.post("/")
 async def add_task(
-    request: Request,
-    name: str = Form(...),
-    description: str = Form(...),
-    status: bool = Form(...),
-    id: int = Form(...),
+        request: Request,
+        name: str = Form(...),
+        description: str = Form(...),
+        status: bool = Form(...),
+        id: int = Form(...),
 ):
     task = Tasks(
         id=int(id),
@@ -43,6 +43,7 @@ async def add_task(
     )
     tasks.append(task)
     return task
+
 
 @app.put("/tasks/{id_task}")
 async def update_task(id_task: int, task: Tasks):
@@ -60,6 +61,7 @@ async def delete_task(id_task: int):
             tasks.remove(task)
             return task
     return {"message": "Task not found"}
+
 
 if __name__ == '__main__':
     uvicorn.run('sem_5_8.main:app', port=8001, reload=True)
