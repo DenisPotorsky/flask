@@ -23,7 +23,7 @@ class Orders(BaseModel):
     __tablename__ = 'orders'
     id: int
     id_users: int = Field(..., title='id_users')
-    id_goods: int = Field(...,title='id_goods')
+    id_goods: int = Field(..., title='id_goods')
     order_date: str = Field(..., title='Order date')
     order_status: str = Field(..., title='Order status')
 
@@ -47,4 +47,3 @@ class OrdersIn(BaseModel):
     id_goods: int = Field(..., title='id_goods')
     order_date: str = Field(..., title='Order date')
     order_status: str = Field(..., title='Order status')
-
